@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <img src="img.jpg" alt="Foto minha">
+        <p>Me chamo Gabriel Dillen, sou estudante de Ciência da Computação na Universidade Vila Velha (UVV)</p>
+    </section>
+    <section id="curriculo">
+            <p>
+            <h3>Habilidades</h3>
+            <p> Aprendizagem Contínua: Tenho muita disposição para aprender novas habilidades e me manter atualizado em minha área.
+                <br>
+                Gerenciamento de Tempo: Tenho facilidade em organizar tarefas e priorizar atividades para cumprir prazos.
+                <br>
+                Trabalho em Equipe: Tenho facilidade em colaborar com outras pessoas, contribuindo para um ambiente de equipe positivo.</p>
+            <h3>Hobbies</h3>
+            <p> Hobbies:  Escalada,
+                          Acampamento e
+                          Trilhas
+                          <br>
+                Esportes: Futebol: Sou fã de futebol e jogo nas horas livres com amigos, além de acompanhar meu time favorito.
+                <br>
+                          Corrida: Pratico corrida regularmente, participando de eventos locais, o que me ajuda a manter a saúde e o foco.
+            </p>
+            <h3>Vida Acadêmica</h3>
+            <p>Sou estudante de Ciência da Computação na Universidade Vila Velha, onde estou atualmente no 1º Periodo.
+                <br>
+                Desde o início da minha jornada acadêmica, tenho me apaixonado por programação e resolução de problemas. 
+                <br>
+                Participei de vários projetos de desenvolvimento de software o que me proporcionou experiência prática em HTML e CSS até o momento.</p>
+            <h3>Planos Futuros</h3>
+            <p>Meu objetivo é me especializar em desenvolvimento de software e inteligência artificial, buscando uma oportunidade de estágio que me permita aplicar minhas habilidades em um ambiente profissional.
+                <br>
+                Estou ansioso para contribuir em projetos que tenham impacto real e, no futuro, pretendo me tornar um Cientista da Computação focado em inovações que possam transformar a forma como interagimos com a tecnologia.</p>
+            <h2>Currículo</h2>
+        <table>
+            <tr>
+                <th>Experiência</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>Estágio em Desenvolvimento</td>
+                <td>Desenvolvi sites em HTML/CSS...</td>
+            </table>
+            </tr>
+    </section>
+
+    <section id="github">
+        <h2>GitHub</h2>
+        <a href="https://github.com/gabrieI107" target="_blank">
+            <img alt="GitHub Logo">
+        </a>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <table>
+            <tr>
+                <th>Tipo de Site</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>1 a 2 páginas</td>
+                <td>R$ 970</td>
+            </tr>
+            <tr>
+                <td>3 a 5 páginas</td>
+                <td>R$ 1450</td>
+            </tr>
+            <tr>
+                <td>mais de 5 páginas</td>
+                <td>De R$ 1600 a R$ 2970</td>
+            </tr>
+            <!-- Mais serviços -->
+        </table>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form action="enviar.php" method="POST">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tipo">Pessoa Física ou Jurídica:</label>
+            <select id="tipo" name="tipo">
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+            </select>
+            <label>Melhor horário de contato:</label>
+            <input type="checkbox" name="horario" value="manhã"> Manhã
+            <input type="checkbox" name="horario" value="tarde"> Tarde
+            <label for="descricao">Descrição do serviço:</label>
+            <textarea id="descricao" name="descricao"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Meu Portfólio</p>
+    </footer>
+</body>
+</html>
